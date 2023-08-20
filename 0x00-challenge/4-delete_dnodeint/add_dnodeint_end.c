@@ -6,9 +6,9 @@
  * add_dnodeint_end - Add a node at the end of a list
  *
  * @head: The address of the pointer to the first element of the list
- * @n: The number to store on the new element
+ * @n: The number to store in the new element
  *
- * Return: A pointer is the new element.
+ * Return: A pointer to the new element
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
