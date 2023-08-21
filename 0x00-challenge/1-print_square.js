@@ -2,8 +2,8 @@
 /*
     Print a square with the character #
 
-The size of the square must be the first argument
-    of a program.
+    The size of the square must be the first argument
+    of the program.
 */
 
 
@@ -14,15 +14,12 @@ if (process.argv.length <= 2) {
     process.exit(1)
 }
 
-/*
-   ParseInt was failing when the number was 10 or greater
-   Fix: converting string using Number object in Javascript.
-*/
-size = Number.parseInt(process.argv[2])
+size = parseInt(process.argv[2], 10)
+
 
 for (let i = 0 ; i < size ; i++) {
-    for (let j = 0 ; j < size; j++) {
-       process.stdout.write("#");
+    for (let j = 0 ; j < size ; j++) {
+        process.stdout.write("#");
     }
     process.stdout.write("\n");
 }
